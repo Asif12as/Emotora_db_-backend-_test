@@ -12,19 +12,37 @@ This is a backend service built with **Express.js** and **MySQL** using **Sequel
 
 ## 📂 Project Structure
 
+Here are the steps you can copy and paste into your GitHub README:  
 
-## ⚙️ Setup Instructions
+1. Install dependencies  
+   - Run: npm install  
 
-### 1️⃣ Install Dependencies
-```bash
-npm install
+2. Configure environment variables  
+   - Create a .env file and add the following:  
+     DATABASE_URL=mysql://root:password@localhost:3306/emotorad_db  
+     PORT=3000  
+   - Replace password with your actual MySQL password  
 
-2️⃣ **Configure Environment Variables**
-Create a .env file and add the following:
-DATABASE_URL=mysql://root:password@localhost:3306/emotorad_db
-PORT=3000
+3. Start MySQL server and create the database  
+   - Run: CREATE DATABASE emotorad_db;  
 
-**
-**## Replace password with your actual MySQL password.****
+4. Run the application  
+   - Start the server using: node index.js  
+   - The server should start on http://localhost:3000  
 
-3️⃣ Start MySQL Server & Create Database
+5. Test the API with Postman or cURL  
+   - Send a POST request to http://localhost:3000/identify  
+   - Request body example: { "email": "doc@zamazon.com", "phoneNumber": "1234567890" }  
+
+6. Verify data in MySQL  
+   - Run: USE emotorad_db;  
+   - Check data using: SELECT * FROM Contact;  
+
+7. Push to GitHub  
+   - Initialize Git: git init  
+   - Add files: git add .  
+   - Commit: git commit -m "Initial commit - Identity reconciliation task"  
+   - Add remote: git remote add origin your-repo-url  
+   - Push changes: git push -u origin main  
+
+Now, you can simply copy and paste this into your README. Let me know if you need any modifications! 🚀
