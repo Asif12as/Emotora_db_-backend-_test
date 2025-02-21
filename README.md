@@ -45,4 +45,3 @@ Here are the steps you can copy and paste into your GitHub README:
    - Add remote: git remote add origin your-repo-url  
    - Push changes: git push -u origin main  
 
-Now, you can simply copy and paste this into your README. Let me know if you need any modifications! 🚀
